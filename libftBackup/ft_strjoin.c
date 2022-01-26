@@ -6,7 +6,7 @@
 /*   By: masebast <masebast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 13:46:14 by masebast          #+#    #+#             */
-/*   Updated: 2022/01/18 14:17:33 by masebast         ###   ########.fr       */
+/*   Updated: 2022/01/26 12:45:17 by masebast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,13 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 	i = 0;
 	j = 0;
+	if (!s1 || !s2)
+	{
+		return (NULL);
+	}
 	str = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!str)
+		return (0);
 	while (s1[i])
 	{
 		str[i] = s1[i];

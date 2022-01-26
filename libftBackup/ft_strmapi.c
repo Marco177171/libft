@@ -6,7 +6,7 @@
 /*   By: masebast <masebast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 11:23:32 by masebast          #+#    #+#             */
-/*   Updated: 2022/01/24 12:08:26 by masebast         ###   ########.fr       */
+/*   Updated: 2022/01/26 12:51:02 by masebast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char				*new_str;
 	unsigned int		i;
 
+	if (!s || !f)
+		return (NULL);
 	new_str = ft_strdup(s);
 	i = 0;
 	if (!new_str)

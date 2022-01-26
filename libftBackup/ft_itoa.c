@@ -6,7 +6,7 @@
 /*   By: masebast <masebast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 17:04:23 by masebast          #+#    #+#             */
-/*   Updated: 2022/01/24 11:18:24 by masebast         ###   ########.fr       */
+/*   Updated: 2022/01/26 14:23:24 by masebast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ int	ft_len(int n)
 
 char	*ft_itoa(int n)
 {
-	char				*result;
-	unsigned int		len;
-	unsigned int		number;
-	int					sign;
+	char			*result;
+	unsigned int	len;
+	unsigned int	number;
+	int				sign;
 
 	sign = 1;
 	len = ft_len(n);
