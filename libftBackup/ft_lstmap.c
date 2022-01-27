@@ -6,7 +6,7 @@
 /*   By: masebast <masebast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 12:06:18 by masebast          #+#    #+#             */
-/*   Updated: 2022/01/26 12:54:00 by masebast         ###   ########.fr       */
+/*   Updated: 2022/01/27 16:50:43 by masebast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_lst;
 	t_list	*new_elem;
 
-	if (!lst || !f)
-		return (NULL);
+	new_lst = NULL;
 	while (lst)
 	{
 		new_elem = ft_lstnew(f(lst->content));

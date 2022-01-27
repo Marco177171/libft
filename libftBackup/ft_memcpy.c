@@ -6,7 +6,7 @@
 /*   By: masebast <masebast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 15:53:03 by masebast          #+#    #+#             */
-/*   Updated: 2022/01/14 17:48:11 by masebast         ###   ########.fr       */
+/*   Updated: 2022/01/27 13:05:20 by masebast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (!dst)
+	if (!dst && !src)
 	{
 		return (NULL);
 	}

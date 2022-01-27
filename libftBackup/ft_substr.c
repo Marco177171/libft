@@ -6,7 +6,7 @@
 /*   By: masebast <masebast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/18 09:50:02 by masebast          #+#    #+#             */
-/*   Updated: 2022/01/18 13:49:59 by masebast         ###   ########.fr       */
+/*   Updated: 2022/01/27 11:38:51 by masebast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	size_t	j;
 	char	*str;
 
+	if (!s)
+		return (NULL);
 	str = (char *)malloc(sizeof(*s) * (len + 1));
 	if (!str)
 	{
